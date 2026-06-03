@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en"><!DOCTYPE html>
+<html>
+<head>
+    <title>KPR Logo</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .logo {
+            font-family: Arial, sans-serif;
+            font-size: 80px;
+            font-weight: bold;
+            color: #2c3e50;
+            letter-spacing: 10px;
+            text-shadow: 3px 3px 6px #aaa;
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #3498db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+        .circle span {
+            color: white;
+            font-size: 60px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Text-based logo -->
+    <div class="logo">KPR</div>
+
+    <!-- Circle-style logo -->
+    <div class="circle">
+        <span>KPR</span>
+    </div>
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Portal Login</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for eye icon -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Left Side (Branding & Logo) -->
+        <div class="login-branding">
+            <div class="branding-content">
+                <img src="your-logo.png" alt="College Logo" class="college-logo">
+                <h2>kpr College Portal</h2>
+                <p>Empowering minds, shaping the future. Log in to access your student or faculty dashboard.</p>
+            </div>
+        </div>
+
+        <!-- Right Side (Login Form) -->
+        <div class="login-form-section">
+            <div class="form-wrapper">
+                <h3>Welcome Back</h3>
+                <p class="subtitle">Please enter your details to sign in.</p>
+                
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <label for="email">Student / Staff Email</label>
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="name@college.edu" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <i class="fas fa-eye" id="togglePassword"></i>
+                    </div>
+
+                    <div class="form-actions">
+                        <label class="remember-me">
+                            <input type="checkbox" checked="checked"> Remember Me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">Sign In</button>
+                </form>
+
+                <p class="register-footer">Need help? <a href="#">Contact IT Support</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Password Visibility
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+</body>
+</html>
